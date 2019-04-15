@@ -124,6 +124,9 @@ for ii = 1:length(bx)
     orderedClassesZ{ii,2} = sortedBetaX(ii);
 end
 
+save('modelPack.mat','bx','by','bz','inputStack','gazeVec');
+
+
 %%
 for ii = 2000:5:size(gazeVec,1)
     
